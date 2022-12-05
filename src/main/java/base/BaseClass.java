@@ -1,6 +1,6 @@
 package base;
 
-import static utils.IConstant.*;
+import static utils.IConstant.*; 
 import java.io.File;
 import java.io.IOException;
 import java.lang.reflect.Method;
@@ -20,7 +20,6 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Parameters;
-
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.Status;
 import com.google.common.io.Files;
@@ -43,7 +42,7 @@ public class BaseClass {
 		extent = ExtentManager.getInstance();
 	}
 
-	 @Parameters("browser") 
+	@Parameters("browser") 
 	@BeforeMethod
 	public void setUpDriver(String browser) {
 		initDriver(browser);

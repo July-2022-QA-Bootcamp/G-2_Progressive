@@ -1,6 +1,6 @@
 package pages.common;
 
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebDriver; 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -41,8 +41,10 @@ public class HomePage {
 		click(getQuotElement);
 	}
 
-	public void homeSteps() {
+	public void homeSteps(String zipCode) {
 		click(homeProductElement);
+		input(zipCodElement, zipCode); 
+		click(getQuotElement); 
 	}
 
 	public void autoSteps(AutoData autoData) {
