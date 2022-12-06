@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test thread-count="5" name="Test">
+	<parameter name="browser" value="chrome"></parameter>
+	<parameter name="zip" value="11368"></parameter>
+	<parameter name="address" value="9610 57th Ave"></parameter>
+	<parameter name="apt" value="17F"></parameter>
+	<parameter name="city" value="Corona"></parameter>
+	<parameter name="state" value="NY"></parameter>
+	<parameter name="residentType" value="6"></parameter>
+	<parameter name="firstName" value="Ross"></parameter>
+	<parameter name="middleName" value="H"></parameter>
+	<parameter name="lastName" value="Galler"></parameter>
+	<parameter name="dob" value="08/22/1972"></parameter>
+	<parameter name="maritalStatus" value="Married"></parameter>
+	<parameter name="email" value="chan123@gmail.com"></parameter>
+	<parameter name="socialSec" value="086-38-3348"></parameter>
+	<parameter name="computerCov" value="D"></parameter>
+	<parameter name="lawSuits" value="C"></parameter>
+	<parameter name="claims" value="0"></parameter>
+		<classes>
+			<class name="renters.RentersTest">
+				<methods>
+					<include name="rentersQuoteParameterized"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite> 
