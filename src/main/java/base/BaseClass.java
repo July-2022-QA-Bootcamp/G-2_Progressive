@@ -20,12 +20,14 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Parameters;
-
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.Status;
 import com.google.common.io.Files;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import pages.common.HomePage;
+import pages.renters.AboutYouRenters;
+import pages.renters.Coverage;
+import pages.renters.Rates;
 import reporting.ExtentManager;
 import reporting.ExtentTestManager;
 import reporting.Logs;
@@ -37,6 +39,9 @@ public class BaseClass {
 	WebDriver driver;
 	ExtentReports extent;
 	protected HomePage homePage;
+	protected AboutYouRenters aboutYouRenters;
+	protected Coverage coverage;
+	protected Rates rates;
 
 	@BeforeSuite
 	public void initiatinExtentReport() {
@@ -105,6 +110,9 @@ public class BaseClass {
 
 	private void initClasses() {
 		homePage = new HomePage(driver);
+		aboutYouRenters = new AboutYouRenters(driver);
+		coverage = new Coverage(driver);
+		rates = new Rates(driver);
 	}
 
 	public WebDriver getDriver() {
@@ -113,7 +121,7 @@ public class BaseClass {
 
 	@AfterMethod
 	public void closingDriverSession() {
-		getDriver().quit();
+	//	getDriver().quit();
 	}
 
 	@AfterSuite
