@@ -24,6 +24,8 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.Status;
 import com.google.common.io.Files;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import page.HomeOwners.PropertyAddressPage;
+import page.HomeOwners.StartPropertyQoutePage;
 import pages.common.HomePage;
 import reporting.ExtentManager;
 import reporting.ExtentTestManager;
@@ -36,6 +38,9 @@ public class BaseClass {
 	WebDriver driver;
 	ExtentReports extent;
 	protected HomePage homePage;
+	protected PropertyAddressPage propertyAddressPage;
+	protected StartPropertyQoutePage startPropertyQoutePage;
+		
 
 	@BeforeSuite
 	public void initiatinExtentReport() {
@@ -104,6 +109,8 @@ public class BaseClass {
 
 	private void initClasses() {
 		homePage = new HomePage(driver);
+		propertyAddressPage = new PropertyAddressPage(driver);
+		startPropertyQoutePage = new StartPropertyQoutePage(driver);
 	}
 
 	public WebDriver getDriver() {

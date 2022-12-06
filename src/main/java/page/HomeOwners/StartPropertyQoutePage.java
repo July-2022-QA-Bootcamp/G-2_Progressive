@@ -24,7 +24,7 @@ public class StartPropertyQoutePage {
 		@FindBy(id ="next-button")
 		WebElement nextButtonElement;
 		
-		public void StartPropertyQouteSteps(String firstName, String lastName, String dob, String city, String state) {
+		public void startPropertyQouteSteps(String firstName, String lastName, String dob, String city, String state) {
 			input(firstNameElement, firstName);
 			input(lastNamElement, lastName);
 			input(cityElement, city);
