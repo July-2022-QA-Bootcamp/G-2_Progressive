@@ -8,7 +8,7 @@ import static common.CommonActions.*;
 
 public class StartPropertyQoutePage {
 
-	public StartPropertyQoutePage (WebDriver driver) {
+	public StartPropertyQoutePage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
 		@FindBy(id = "PolicyData_FirstName")

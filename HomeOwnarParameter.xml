@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+ <parameter name="browser" value="chrome"></parameter>
+   <parameter name="zipCode" value="11210"></parameter>
+   <parameter name="address" value="1030 Ocean ave"></parameter>
+   <parameter name="firstName" value="Ali"></parameter>
+   <parameter name="lastName" value="khan"></parameter>
+   <parameter name="dob" value="01/20/1960"></parameter>
+   <parameter name="city" value="Brooklyn"></parameter>
+   <parameter name="state" value="NY"></parameter>
+  	<classes>
+      <class name="homeOwnerTest">
+      <methods>
+      <include name= "homeOwnerTestParameterized"></include>
+        </methods>
+        </class>
+  </classes>
+  </test> 
+</suite> 

@@ -40,10 +40,10 @@ public class BaseClass {
 	Configuration config = new Configuration();
 	WebDriver driver;
 	ExtentReports extent;
+	
 	protected HomePage homePage;
-
 	protected PropertyAddressPage propertyAddressPage;
-	protected StartPropertyQoutePage startPropertyQoutePage;
+	protected StartPropertyQoutePage startPropertyQoute;
 	protected AboutYouRenters aboutYouRenters;
 	protected Coverage coverage;
 	protected Rates rates;
@@ -117,7 +117,7 @@ public class BaseClass {
 	private void initClasses() {
 		homePage = new HomePage(driver);
 		propertyAddressPage = new PropertyAddressPage(driver);
-		startPropertyQoutePage = new StartPropertyQoutePage(driver);
+		startPropertyQoute = new StartPropertyQoutePage(driver);
 		aboutYouRenters = new AboutYouRenters(driver);
 		coverage = new Coverage(driver);
 		rates = new Rates(driver);
