@@ -1,6 +1,11 @@
 package renters;
 
 import org.testng.annotations.Test;
+import org.testng.annotations.Test; 
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 import org.testng.annotations.Parameters;
 import base.BaseClass;
 
@@ -21,5 +26,5 @@ public class RentersTest extends BaseClass {
 		aboutYouRenters.AboutYouSteps(address, apt, city, state,residentType, firstN, middleIn, lastN, dob, maritalSta, email, socialS);
 		coverage.coverageSteps(computerCov, lawSuits, claims);
 		rates.rateSteps();
-	}
+	} 
 }

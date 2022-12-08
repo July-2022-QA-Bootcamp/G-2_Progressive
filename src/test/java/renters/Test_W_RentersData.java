@@ -1,6 +1,11 @@
 package renters;
 
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+import org.testng.annotations.Test; 
 import base.BaseClass;
 import utils.data.RentersData;
 
@@ -13,7 +18,7 @@ public class Test_W_RentersData extends BaseClass{
 		homePage.rentersSteps(rentersData);
 		aboutYouRenters.AboutYouSteps(rentersData);
 		coverage.coverageSteps(rentersData);
-		rates.rateSteps();
+		rates.rateSteps(); 
 	}
 
 }
