@@ -24,6 +24,7 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.Status;
 import com.google.common.io.Files;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import page.HomeOwners.ConfirmPropertyAddressPage;
 import page.HomeOwners.PropertyAddressPage;
 import page.HomeOwners.StartPropertyQoutePage;
 import pages.common.HomePage;
@@ -44,9 +45,11 @@ public class BaseClass {
 	protected HomePage homePage;
 	protected PropertyAddressPage propertyAddressPage;
 	protected StartPropertyQoutePage startPropertyQoute;
+	protected ConfirmPropertyAddressPage confirnPropertyAddressPage;
 	protected AboutYouRenters aboutYouRenters;
 	protected Coverage coverage;
 	protected Rates rates;
+	
 
 
 	@BeforeSuite
@@ -118,9 +121,11 @@ public class BaseClass {
 		homePage = new HomePage(driver);
 		propertyAddressPage = new PropertyAddressPage(driver);
 		startPropertyQoute = new StartPropertyQoutePage(driver);
+		confirnPropertyAddressPage = new  ConfirmPropertyAddressPage(driver);
 		aboutYouRenters = new AboutYouRenters(driver);
 		coverage = new Coverage(driver);
 		rates = new Rates(driver);
+		
 	}
 
 	public WebDriver getDriver() {
