@@ -11,13 +11,13 @@ public class StartPropertyQoutePage {
 	public StartPropertyQoutePage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
-		@FindBy(id = "PolicyData_FirstName")
+		@FindBy(xpath = "//input[@id='PolicyData_FirstName']")
 		WebElement firstNameElement;
 		@FindBy(id = "PolicyData_LastName")
 		WebElement lastNamElement;
 		@FindBy(id = "PolicyData_DateOfBirth")
 		WebElement dobElement;
-		@FindBy(xpath = "//input[@id='PolicyData_PropertyAddress_City']")
+		@FindBy(xpath = "//input[@name='maskedInput' and @id='PolicyData_DateOfBirth']")
 		WebElement cityElement;
 		@FindBy(xpath = "//label[@for='PolicyData_PropertyAddress_State']")
 		WebElement stateElement;
